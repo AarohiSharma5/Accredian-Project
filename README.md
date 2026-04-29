@@ -88,5 +88,5 @@ Manual improvements made:
 ## Submission Links
 
 - GitHub Repository: `https://github.com/AarohiSharma5/Accredian-Project`
-- Vercel Deployment: `ADD_VERCEL_LINK_HERE`
+- Vercel Deployment: `https://accredian-project-phi.vercel.app/`
 - Submission Form: https://docs.google.com/forms/d/e/1FAIpQLSeC-GbWRJNCY5ja3nFV8a2G4ChP4Ar_7lMZSbLAtcKRP0oJ2Q/viewform
