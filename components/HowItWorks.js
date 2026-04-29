@@ -23,7 +23,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="how" className="section bg-slate-50">
+    <section id="how" className="section scroll-mt-20 bg-slate-50 lg:scroll-mt-24">
       <div className="container">
         <div className="max-w-2xl">
           <p className="text-sm font-semibold uppercase tracking-[0.24em] text-accent">How it works</p>

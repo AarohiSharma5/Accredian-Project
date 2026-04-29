@@ -44,7 +44,7 @@ const items = [
 
 export default function Features() {
   return (
-    <section id="features" className="section bg-white">
+    <section id="features" className="section scroll-mt-20 bg-white lg:scroll-mt-24">
       <div className="container">
         <div className="max-w-2xl">
           <p className="text-sm font-semibold uppercase tracking-[0.24em] text-accent">Why choose us</p>

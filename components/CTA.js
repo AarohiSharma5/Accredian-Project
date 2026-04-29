@@ -2,7 +2,7 @@ import Button from './Button'
 
 export default function CTA() {
   return (
-    <section id="pricing" className="section bg-white">
+    <section id="pricing" className="section scroll-mt-20 bg-white lg:scroll-mt-24">
       <div className="container">
         <div className="rounded-3xl bg-gradient-to-r from-slate-950 via-slate-900 to-accent px-6 py-14 text-center text-white shadow-[0_24px_80px_-40px_rgba(15,23,42,0.7)] sm:px-10 lg:px-16">
           <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">

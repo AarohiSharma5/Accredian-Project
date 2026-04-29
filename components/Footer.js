@@ -36,7 +36,7 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer id="contact" className="border-t border-slate-200 bg-white py-8">
+    <footer id="contact" className="scroll-mt-20 border-t border-slate-200 bg-white py-8 lg:scroll-mt-24">
       <div className="container flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <div className="text-base font-semibold tracking-tight text-slate-950">Accredian</div>

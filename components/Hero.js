@@ -2,7 +2,7 @@ import Button from './Button'
 
 export default function Hero() {
   return (
-    <section id="home" className="section overflow-hidden bg-gradient-to-b from-white via-slate-50 to-white">
+    <section id="home" className="section scroll-mt-20 overflow-hidden bg-gradient-to-b from-white via-slate-50 to-white lg:scroll-mt-24">
       <div className="container grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
         <div className="animate-fade-in-up space-y-7">
           <div className="inline-flex items-center rounded-full border border-accent/15 bg-accent/5 px-4 py-2 text-sm font-medium text-accent">
