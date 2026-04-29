@@ -45,7 +45,7 @@ export default function Footer() {
 
         <nav className="flex flex-wrap items-center gap-5 text-sm font-medium text-slate-600">
           {footerLinks.map((link) => (
-            <a key={link.label} href={link.href} className="transition hover:text-accent">
+            <a key={link.label} href={link.href} className="transition duration-300 hover:text-accent">
               {link.label}
             </a>
           ))}

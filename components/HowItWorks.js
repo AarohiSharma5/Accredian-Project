@@ -35,10 +35,10 @@ export default function HowItWorks() {
           </p>
         </div>
 
-        <div className="mt-10 flex flex-col gap-4 lg:flex-row lg:gap-0 lg:items-stretch">
+        <div className="stagger mt-10 flex flex-col gap-4 lg:flex-row lg:gap-0 lg:items-stretch">
           {steps.map((step, index) => (
             <div key={step.number} className="relative flex-1">
-              <div className="group h-full rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-accent/30 hover:shadow-lg sm:p-7">
+              <div className="group surface-card hover-lift h-full p-6 sm:p-7">
                 <div className="flex items-center gap-4">
                   <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-950 text-sm font-bold text-white transition group-hover:bg-accent">
                     {step.number}

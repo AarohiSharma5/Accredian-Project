@@ -4,6 +4,8 @@
 
 :root {
   --max-w: 1200px;
+  --surface: #f8fafc;
+  --surface-border: #e2e8f0;
 }
 
 @layer base {
@@ -14,6 +16,7 @@
 
   body {
     @apply overflow-x-hidden;
+    background-image: radial-gradient(circle at 8% -15%, rgba(14, 165, 164, 0.08), transparent 30%);
   }
 
   a {
@@ -31,10 +34,51 @@
   }
 
   .section {
-    @apply py-16;
+    @apply py-16 md:py-20;
   }
 
   .section-sm {
-    @apply py-10;
+    @apply py-10 md:py-12;
+  }
+
+  .surface-card {
+    background-color: var(--surface);
+    border: 1px solid var(--surface-border);
+    @apply rounded-3xl shadow-sm;
+  }
+
+  .hover-lift {
+    @apply transition duration-300;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 38px -24px rgba(15, 23, 42, 0.35);
+  }
+
+  .stagger > * {
+    animation: fadeInUp 600ms ease-out both;
+  }
+
+  .stagger > *:nth-child(1) { animation-delay: 70ms; }
+  .stagger > *:nth-child(2) { animation-delay: 130ms; }
+  .stagger > *:nth-child(3) { animation-delay: 190ms; }
+  .stagger > *:nth-child(4) { animation-delay: 250ms; }
+  .stagger > *:nth-child(5) { animation-delay: 310ms; }
+  .stagger > *:nth-child(6) { animation-delay: 370ms; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .stagger > * {
+      animation: none;
+    }
+
+    .hover-lift {
+      transition: none;
+    }
+
+    .hover-lift:hover {
+      transform: none;
+      box-shadow: none;
+    }
   }
 }

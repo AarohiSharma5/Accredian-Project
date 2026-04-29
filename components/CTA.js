@@ -40,7 +40,7 @@ export default function CTA() {
   return (
     <section id="pricing" className="section scroll-mt-20 bg-white lg:scroll-mt-24">
       <div className="container">
-        <div className="rounded-3xl bg-gradient-to-r from-slate-950 via-slate-900 to-accent px-6 py-14 text-center text-white shadow-[0_24px_80px_-40px_rgba(15,23,42,0.7)] sm:px-10 lg:px-16">
+        <div className="animate-fade-in-up rounded-3xl bg-gradient-to-r from-slate-950 via-slate-900 to-accent px-6 py-12 text-center text-white shadow-[0_24px_80px_-40px_rgba(15,23,42,0.7)] sm:px-10 sm:py-14 lg:px-16">
           <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">
             Ready to get started?
           </p>
@@ -60,7 +60,7 @@ export default function CTA() {
               onChange={(event) => setName(event.target.value)}
               placeholder="Your name"
               required
-              className="h-12 rounded-full border border-white/20 bg-white/95 px-4 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-white/60"
+              className="h-12 rounded-full border border-white/20 bg-white/95 px-4 text-sm text-slate-900 placeholder:text-slate-400 transition focus:outline-none focus:ring-2 focus:ring-white/60"
             />
             <input
               type="email"
@@ -68,7 +68,7 @@ export default function CTA() {
               onChange={(event) => setEmail(event.target.value)}
               placeholder="Work email"
               required
-              className="h-12 rounded-full border border-white/20 bg-white/95 px-4 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-white/60"
+              className="h-12 rounded-full border border-white/20 bg-white/95 px-4 text-sm text-slate-900 placeholder:text-slate-400 transition focus:outline-none focus:ring-2 focus:ring-white/60"
             />
 
             <div className="sm:col-span-2 flex flex-col justify-center gap-3 sm:flex-row">
@@ -81,7 +81,7 @@ export default function CTA() {
               </Button>
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white transition hover:border-white hover:bg-white/10"
+                className="inline-flex items-center justify-center rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:border-white hover:bg-white/10"
               >
                 Contact
               </a>

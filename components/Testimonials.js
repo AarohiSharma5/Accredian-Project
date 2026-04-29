@@ -36,11 +36,11 @@ export default function Testimonials() {
           </p>
         </div>
 
-        <div className="mt-10 grid gap-5 lg:grid-cols-3">
+        <div className="stagger mt-10 grid gap-5 lg:grid-cols-3">
           {testimonials.map((testimonial) => (
             <figure
               key={testimonial.name}
-              className="group rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-accent/30 hover:bg-white hover:shadow-lg sm:p-7"
+              className="group surface-card hover-lift p-6 sm:p-7"
             >
               <blockquote className="text-sm leading-7 text-slate-700 sm:text-[15px]">
                 “{testimonial.quote}”

@@ -56,11 +56,11 @@ export default function Features() {
           </p>
         </div>
 
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
+        <div className="stagger mt-10 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
           {items.map((item) => (
             <div
               key={item.title}
-              className="group rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-accent/30 hover:bg-white hover:shadow-lg"
+              className="group surface-card hover-lift p-6"
             >
               <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-950 text-white transition duration-300 group-hover:bg-accent">
                 {item.icon}

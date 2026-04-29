@@ -20,11 +20,11 @@ export default function Logos() {
           </p>
         </div>
 
-        <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6 lg:gap-5">
+        <div className="stagger mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6 lg:gap-5">
           {companies.map((company) => (
             <div
               key={company.name}
-              className="group flex min-h-24 items-center justify-center rounded-2xl border border-slate-200 bg-white px-4 py-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-accent/30 hover:shadow-md"
+              className="group surface-card hover-lift flex min-h-24 items-center justify-center px-4 py-5"
             >
               <div className="flex items-center gap-3">
                 <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-slate-950 text-sm font-bold text-white transition group-hover:bg-accent">
