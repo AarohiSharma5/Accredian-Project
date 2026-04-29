@@ -1,6 +1,6 @@
 export default function Footer(){
   return (
-    <footer className="bg-slate-900 text-white py-10">
+    <footer id="contact" className="bg-slate-900 py-10 text-white">
       <div className="container grid md:grid-cols-3 gap-6">
         <div>
           <div className="text-lg font-bold">Accredian</div>
@@ -19,7 +19,7 @@ export default function Footer(){
           <div>Contact</div>
         </div>
       </div>
-      <div className="container text-slate-500 text-sm mt-8">© {new Date().getFullYear()} Accredian — Built with Next.js</div>
+      <div className="container mt-8 text-sm text-slate-500">© {new Date().getFullYear()} Accredian — Built with Next.js</div>
     </footer>
   )
 }
