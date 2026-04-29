@@ -40,18 +40,21 @@ export default function CTA() {
   return (
     <section id="pricing" className="section scroll-mt-20 bg-white lg:scroll-mt-24">
       <div className="container">
-        <div className="animate-fade-in-up rounded-3xl bg-gradient-to-r from-slate-950 via-slate-900 to-accent px-6 py-12 text-center text-white shadow-[0_24px_80px_-40px_rgba(15,23,42,0.7)] sm:px-10 sm:py-14 lg:px-16">
-          <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">
-            Ready to get started?
-          </p>
-
-          <h2 className="mx-auto mt-4 max-w-3xl text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
-            Launch your next enterprise program with a clean, scalable experience.
-          </h2>
-
-          <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-white/80 sm:text-base">
-            Get a focused workflow, stronger engagement, and a platform your team can adopt quickly.
-          </p>
+        <div className="animate-fade-in-up rounded-3xl bg-[#2574dc] px-6 py-10 text-white shadow-[0_24px_80px_-40px_rgba(15,23,42,0.7)] sm:px-10 sm:py-12 lg:px-14">
+          <div className="flex flex-col items-start justify-between gap-6 text-left lg:flex-row lg:items-center">
+            <div>
+              <p className="text-base font-semibold text-blue-100">Want to Learn More About Our Training Solutions?</p>
+              <h2 className="mt-2 text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
+                Get Expert Guidance for Your Team's Success!
+              </h2>
+            </div>
+            <a
+              href="#contact"
+              className="inline-flex items-center justify-center rounded-xl bg-white px-8 py-3 text-lg font-semibold text-[#2574dc] transition duration-300 hover:-translate-y-0.5 hover:bg-slate-100"
+            >
+              Contact Us
+            </a>
+          </div>
 
           <form onSubmit={handleSubmit} className="mx-auto mt-8 grid w-full max-w-2xl gap-3 sm:grid-cols-2">
             <input
@@ -72,11 +75,7 @@ export default function CTA() {
             />
 
             <div className="sm:col-span-2 flex flex-col justify-center gap-3 sm:flex-row">
-              <Button
-                type="submit"
-                disabled={status === 'loading'}
-                className="justify-center bg-white text-slate-950 hover:bg-slate-100 disabled:cursor-not-allowed disabled:opacity-70"
-              >
+              <Button type="submit" disabled={status === 'loading'} className="justify-center bg-white text-slate-950 hover:bg-slate-100 disabled:cursor-not-allowed disabled:opacity-70">
                 {status === 'loading' ? 'Submitting...' : 'Get Started'}
               </Button>
               <a

@@ -4,9 +4,13 @@ import { useEffect, useState } from 'react'
 
 const navItems = [
   { id: 'home', label: 'Home' },
-  { id: 'features', label: 'Features' },
-  { id: 'pricing', label: 'Pricing' },
-  { id: 'contact', label: 'Contact' },
+  { id: 'stats', label: 'Stats' },
+  { id: 'clients', label: 'Clients' },
+  { id: 'edge', label: 'Accredian Edge' },
+  { id: 'cat', label: 'CAT' },
+  { id: 'how', label: 'How It Works' },
+  { id: 'faqs', label: 'FAQs' },
+  { id: 'testimonials', label: 'Testimonials' },
 ]
 
 export default function Navbar() {

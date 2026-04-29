@@ -1,24 +1,17 @@
 const testimonials = [
   {
-    name: 'Sana J',
-    role: 'CISO',
-    company: 'Acme',
-    quote: 'Accredian gave us a simpler way to launch and track enterprise programs without adding complexity for the team.',
-    avatar: 'SJ',
+    name: 'ADP',
+    role: 'Partner',
+    company: 'ADP',
+    quote: 'We would like to thank Accredian for the wonderful support and beautiful journey. The team turned our vision into reality with unparalleled dedication and expertise.',
+    avatar: 'ADP',
   },
   {
-    name: 'Marcus L',
-    role: 'VP Engineering',
-    company: 'BetaCorp',
-    quote: 'The workflow is clean, the reporting is clear, and our teams adopted it quickly across departments.',
-    avatar: 'ML',
-  },
-  {
-    name: 'Priya K',
-    role: 'Head of Talent',
-    company: 'Northstar',
-    quote: 'We finally have a learning experience that feels consistent, measurable, and easy to scale globally.',
-    avatar: 'PK',
+    name: 'Bayer',
+    role: 'Partner',
+    company: 'Bayer',
+    quote: "Accredian's commitment to excellence is unmatched. They consistently go the extra mile to ensure needs are met and exceeded.",
+    avatar: 'B',
   },
 ]
 
@@ -29,14 +22,14 @@ export default function Testimonials() {
         <div className="max-w-2xl">
           <p className="text-sm font-semibold uppercase tracking-[0.24em] text-accent">Testimonials</p>
           <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-slate-950 sm:text-4xl">
-            Loved by teams building better enterprise experiences.
+            Testimonials from <span className="text-accent">Our Partners</span>
           </h2>
           <p className="mt-4 text-base leading-7 text-slate-600">
-            Real feedback from leaders using Accredian-style workflows to move faster and stay aligned.
+            What <span className="font-semibold text-accent">Our Clients</span> Are Saying
           </p>
         </div>
 
-        <div className="stagger mt-10 grid gap-5 lg:grid-cols-3">
+        <div className="stagger mt-10 grid gap-5 lg:grid-cols-2">
           {testimonials.map((testimonial) => (
             <figure
               key={testimonial.name}
